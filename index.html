@@ -12,12 +12,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="bg-light">
     <!-- header start -->
-    <header>
+    <header class="bg-white pb-5 mb-5">
         <!-- navbar start -->
-        <nav class="navbar navbar-expand-lg navbar-light mt-5">
-            <div class="container w-75">
+        <nav class=" fixed-top bg-white navbar navbar-expand-lg navbar-light pt-5 ps-lg-5 ps-md-0 ps-sm-0 ps-0 mb-5">
+            <div class="container ps-lg-5 ps-md-0 ps-sm-0 ps-0 ">
 
                 <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" width="160"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -27,36 +27,155 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <form class=" d-flex gg mx-lg-5 mx-md-0 mx-sm-0 mx-0 ">
-                        <form class="d-flex gg mx-lg-5 mx-md-0 mx-sm-0 mx-0">
-                            <input class=" rounded-pill form-control me-2 bg-light border-0" type="search"
-                                placeholder="Search">
-                            <button class="border-0 bg-body" type="submit"><i class="fas fa-search "></i></button>
-                        </form>
-                        <ul
-                            class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-lg-center align-items-md-center align-items-sm-start align-items-start">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Product</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">About us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Contact us</a>
-                            </li>
+
+                    <form class="d-flex justify-content-center searchbar-width mx-lg-5 mx-md-0 mx-sm-0 mx-0">
+                        <input class="rounded-pill form-control me-2 bg-light border-0" type="search"
+                            placeholder="Search">
+                        <button class="border-0 bg-body" type="submit"><i class="fas fa-search "></i></button>
+                    </form>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contact us</a>
+                        </li>
 
 
-                        </ul>
+                    </ul>
 
 
                 </div>
             </div>
         </nav>
+        <!-- slider start -->
+        <section class="pt-5 mt-5">
+
+
+
+
+            <div id="carouselExampleIndicators"
+                class="carousel slide container mt-5 pt-3 pb-3  slider-bg-color  rounded-3" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div
+                            class="d-flex justify-content-around align-items-center flex-lg-row flex-md-row flexsmall-column flex-column">
+                            <div>
+                                <h1>Cool Dude Headphone</h1>
+                                <p>This is the best headphone in the world for people who just want to
+                                    waste time in <br>
+                                    front of funky world.</p>
+                                <h1 class="text-danger mb-3">$1200</h1>
+                                <a class="text-decoration-none text-white px-4 py-2 bg-danger bg-gradient rounded-3"
+                                    href="">Buy
+                                    Now</a>
+                            </div>
+                            <div>
+                                <img width="400" src="images/banner-images/headphone.png" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div
+                            class="d-flex justify-content-around align-items-center flex-lg-row flex-md-row flexsmall-column flex-column">
+                            <div>
+                                <h1>Mega LCD TV For Sports</h1>
+                                <p>This is the best tv in the world for people who just want to waste time
+                                    in front of
+                                    tv.</p>
+                                <h1 class="text-danger mb-3">$1200</h1>
+                                <a class="text-decoration-none text-white px-4 py-2 bg-danger bg-gradient rounded-3"
+                                    href="">Buy
+                                    Now</a>
+                            </div>
+                            <div>
+                                <img width="400" src="images/banner-images/tv.png" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div
+                            class="d-flex justify-content-around align-items-center flex-lg-row flex-md-row flexsmall-column flex-column">
+                            <div>
+                                <h1>X-Box for your living room</h1>
+                                <p>This is the best x-box in the world for people who just want to waste
+                                    time in front <br>
+                                    of fake sports.</p>
+                                <h1 class="text-danger mb-3">$1200</h1>
+                                <a class="text-decoration-none text-white px-4 py-2 bg-danger bg-gradient rounded-3"
+                                    href="">Buy
+                                    Now</a>
+                            </div>
+                            <div>
+                                <img width="400" src="images/banner-images/xbox.png" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </section>
+        <!-- categories part -->
+        <section class="container mt-5">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                    <div class="d-flex justify-content-around align-items-center bg-primary bg-gradient p-2 rounded-3">
+                        <h1>
+                            Watch
+                        </h1>
+                        <img height="90" src="images/categories/watch.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                    <div class="d-flex justify-content-around align-items-center bg-warning bg-gradient p-2 rounded-3">
+                        <h1>
+                            Shoes
+                        </h1>
+                        <img height="90" src="images/categories/shoes.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                    <div class="d-flex justify-content-around align-items-center bg-success bg-gradient p-2 rounded-3">
+                        <h1>
+                            Bags
+                        </h1>
+                        <img height="90" src="images/categories/bag.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
     </header>
     <main>
+        <section class="container">
+            <h1>fnfnf</h1>
+        </section>
 
     </main>
     <footer>
